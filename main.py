@@ -89,11 +89,11 @@ binary_to_image(first_image)
 print(f"Differing pixels of {first_image}: {compare_images(original_image, first_image)}")
 
 second_image = 'image_2'
-randomly_swap_bits_in_color_data(original_image, second_image, 0.05)
+randomly_swap_bits_in_color_data(original_image, second_image, 0.01)
 binary_to_image(second_image)
 print(f"Differing pixels of {second_image}: {compare_images(original_image, second_image)}")
 
 third_image = 'image_3'
-randomly_swap_bits_in_color_data(original_image, third_image, 0.01)
+randomly_swap_bits_in_color_data(original_image, third_image, 0.001)
 binary_to_image(third_image)
 print(f"Differing pixels of {third_image}: {compare_images(original_image, third_image)}")
